@@ -1,0 +1,10 @@
+2022-02-21 21:51:17.375 JST [28932] FATAL:  lock file "postmaster.pid" already exists
+2022-02-21 21:51:17.375 JST [28932] HINT:  Is another postmaster (PID 28922) running in data directory "/usr/local/var/postgres"?
+2022-02-21 21:56:21.243 JST [29280] FATAL:  lock file "postmaster.pid" already exists
+2022-02-21 21:56:21.243 JST [29280] HINT:  Is another postmaster (PID 29270) running in data directory "/usr/local/var/postgres"?
+2022-02-21 21:57:23.552 JST [29427] LOG:  starting PostgreSQL 14.2 on x86_64-apple-darwin20.6.0, compiled by Apple clang version 13.0.0 (clang-1300.0.29.30), 64-bit
+2022-02-21 21:57:23.553 JST [29427] LOG:  listening on IPv6 address "::1", port 5432
+2022-02-21 21:57:23.553 JST [29427] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2022-02-21 21:57:23.554 JST [29427] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2022-02-21 21:57:23.559 JST [29428] LOG:  database system was shut down at 2022-02-21 21:56:39 JST
+2022-02-21 21:57:23.562 JST [29427] LOG:  database system is ready to accept connections

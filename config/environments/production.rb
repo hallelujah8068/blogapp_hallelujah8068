@@ -63,7 +63,7 @@ Rails.application.configure do
   config.action_mailer.perform_caching = false
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.perform_deliveries = true
-  host = 'blog-app-hallelujah8068.herokuapp.com'
+  host = 'blog-app-hallelujah8068'
   config.action_mailer.default_url_options = { host: host }
   ActionMailer::Base.smtp_settings         = {
       address:              'smtp.sendgrid.net',

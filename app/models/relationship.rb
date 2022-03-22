@@ -30,6 +30,6 @@ class Relationship < ApplicationRecord
 
     private
     def send_email
-        RelationshipMailer.send_email
+        RelationshipMailer.test_email
     end
 end

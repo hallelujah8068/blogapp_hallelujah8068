@@ -19,6 +19,10 @@
 #  fk_rails_...  (following_id => users.id)
 #
 class Relationship < ApplicationRecord
+
+    require 'sendgrid-ruby'
+    include SendGrid
+
     belongs_to :follower, class_name: 'User'
     belongs_to :following, class_name: 'User'
 
@@ -26,6 +30,6 @@ class Relationship < ApplicationRecord
 
     private
     def send_email
-        RelationshipMailer.test_email
+        RelationshipMailer.new_follower(following,follower).deliver_later
     end
 end

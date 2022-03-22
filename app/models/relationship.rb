@@ -20,6 +20,9 @@
 #
 class Relationship < ApplicationRecord
 
+    require 'sendgrid-ruby'
+    include SendGrid
+
     belongs_to :follower, class_name: 'User'
     belongs_to :following, class_name: 'User'
 

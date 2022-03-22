@@ -18,11 +18,4 @@ class RelationshipMailer < ApplicationMailer
         sg = SendGrid::API.new(api_key: ENV['SENDGRID_API_KEY'])
         response = sg.client.mail._('send').post(request_body: mail.to_json)
     end
-
-    def send_email(user, follower)
-        @user = user
-        @follower = follower
-        mail to: user.email, subject: '【お知らせ】フォローされました'
-        sg = SendGrid::API.new(api_key: ENV['SENDGRID_API_KEY'])
-    end
 end 
